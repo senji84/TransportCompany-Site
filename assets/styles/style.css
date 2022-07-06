@@ -10,6 +10,12 @@ body {
   color: #585858;
 }
 
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 p {
   margin: 0 0 10px;
 }
@@ -477,4 +483,77 @@ ol {
 .reviews__content p {
   margin-bottom: 20px;
   text-indent: 20px;
+}
+
+/* Benefits */
+.benefits {
+  display: flex;
+}
+
+.benefits__col {
+  width: 50%;
+}
+
+.benefits-list {
+  position: relative;
+
+  width: 100%;
+  max-width: 370px;
+  padding-left: 50px;
+
+  background-image: linear-gradient(to bottom, #fff 40%, #a5a5a5 40%);
+  background-size: 2px 35px;
+  background-repeat: repeat-y;
+  background-position: left 12px top -4px;
+}
+
+.benefits-list::before,
+.benefits-list::after {
+  content: '';
+  display: block;
+  width: 26px;
+  height: 36px;
+
+  background-repeat: no-repeat;
+
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.benefits-list::before {
+  background: url(../images/benefits/pin-start.svg) no-repeat;
+  background-color: #fff;
+
+  top: -5px;
+}
+
+.benefits-list::after {
+  background: url(../images/benefits/pin-end.svg) no-repeat;
+  background-color: #fff;
+
+  bottom: -4px;
+}
+
+.benefits-list::after .benefits-list__item:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.benefits-list__item:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.benefits-list__title {
+  font-family: 'Lato', sans-serif;
+  font-size: 21px;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  color: #2c2c2c;
+  font-weight: 900;
+}
+
+.benefits-list__text {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #585858;
 }
