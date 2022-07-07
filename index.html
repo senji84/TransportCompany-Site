@@ -501,11 +501,11 @@
       <div class="container">
         <img src="./assets/images/footer/logo-black.svg" alt="" />
         <address class="footer__contacts">
-          <p>Москва,Улица Комсомольская 43</p>
+          <p>Москва, Улица Комсомольская 43</p>
           <p>
             Звоните нам:
-            <a href="tel:+7(123)-456-78-90">+7(123)-456-78-90</a> или пишите
-            письма:
+            <a href="tel:+7(123)-456-78-90">+7(123)-456-78-90</a> или пишите на
+            почту:
             <a href="mailto:translogistic@example.com"
               >translogistic@example.com</a
             >
@@ -520,5 +520,104 @@
       </div>
     </footer>
     <!-- Footer section  -->
+
+    <!-- Modal -->
+    <div class="modal" id="becomeClientModal">
+      <div class="modal__inner">
+        <div class="modal__header">
+          <h4 class="modal__title">Нужно доставить груз?<br />Мы поможем!</h4>
+          <div class="modal__text">
+            <p>Заполните маленькую форму и мы перезвоним</p>
+          </div>
+        </div>
+
+        <form class="form" action="/" method="post">
+          <div class="form__group">
+            <div class="form__group-user--black"></div>
+            <input
+              class="input input--dark"
+              type="text"
+              placeholder="Ваше имя"
+            />
+          </div>
+          <div class="form__group">
+            <div class="form__group-tel--black"></div>
+            <input
+              class="input input--dark"
+              type="tel"
+              placeholder="Ваш телефон"
+            />
+          </div>
+          <div class="form__group">
+            <div class="form__group-email--black"></div>
+            <input
+              class="input input--dark"
+              type="email"
+              placeholder="Ваш email"
+            />
+          </div>
+          <button class="btn btn--orange btn--block" type="submit">
+            Перезвоните мне
+          </button>
+        </form>
+
+        <div class="modal__footer">
+          <h4 class="modal__footer-title">Наши контакты</h4>
+          <address class="modal__contacts">
+            <p>Москва, Улица Комсомольская 43</p>
+            <p>Phone: <a href="tel:+7(123)-456-78-90">+7(123)-456-78-90</a></p>
+            <p>
+              Email:
+              <a href="mailto:translogistic@example.com"
+                >translogistic@example.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <button class="modal__close">
+          <img src="./assets/images/modal/close.svg" alt="" />
+        </button>
+      </div>
+      <!-- Modal inner -->
+    </div>
+    <!-- Modal -->
+
+    <!-- Modal -->
+    <div class="modal" id="thanksModal">
+      <div class="modal__inner">
+        <div class="modal__header">
+          <img
+            class="img modal__icon"
+            src="./assets/images/modal/tick.svg"
+            alt=""
+          />
+          <h4 class="modal__title">Спасибо за ваш запрос</h4>
+          <div class="modal__text">
+            <p>Мы перезвоним вам как можно скорее!</p>
+          </div>
+        </div>
+
+        <div class="modal__footer">
+          <h4 class="modal__footer-title">Наши контакты</h4>
+          <address class="modal__contacts">
+            <p>Москва, Улица Комсомольская 43</p>
+            <p>Phone: <a href="tel:+7(123)-456-78-90">+7(123)-456-78-90</a></p>
+            <p>
+              Email:
+              <a href="mailto:translogistic@example.com"
+                >translogistic@example.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <button class="modal__close">
+          <img src="./assets/images/modal/close.svg" alt="" />
+        </button>
+      </div>
+      <!-- Modal inner -->
+    </div>
+    <!-- Modal -->
   </body>
 </html>
