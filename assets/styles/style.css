@@ -19,6 +19,10 @@ body.no-scroll {
   height: auto;
 }
 
+.img--logo {
+  vertical-align: middle;
+}
+
 .text__center {
   text-align: center;
 }
@@ -79,7 +83,7 @@ ol {
 }
 
 .header--dark {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .header__inner {
@@ -1127,8 +1131,31 @@ ol {
 
 /* Media */
 @media (max-width: 768px) {
+  .header__inner {
+    height: 50px;
+  }
+
   .nav {
     display: none;
+    flex-direction: column;
+    width: 100%;
+    min-height: calc(100vh - 50px);
+    height: auto;
+    padding-top: 5px;
+
+    background-color: rgba(0, 0, 0, 0.85);
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .nav__link {
+    display: block;
+    padding: 10px 20px;
+    text-align: right;
   }
 
   .burger {
