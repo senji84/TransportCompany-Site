@@ -15,166 +15,179 @@
     <title>Center Logistic</title>
   </head>
   <body>
-    <!-- Header -->
-    <header class="header">
-      <div class="container">
-        <div class="header__inner">
-          <a href="index.html"
-            ><img src="./assets/images/header/logo.svg" alt=""
-          /></a>
+    <div class="page">
+      <!-- Header -->
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <a href="index.html"
+              ><img src="./assets/images/header/logo.svg" alt=""
+            /></a>
 
-          <nav class="nav">
-            <a class="nav__link active" href="index.html">Главная</a>
-            <a class="nav__link" href="">Пользовательское соглашение</a>
-            <a class="nav__link" href="">Термины и условия</a>
+            <nav class="nav">
+              <a class="nav__link" href="index.html">Главная</a>
+              <a class="nav__link active" href="blog.html">Блог</a>
+              <a class="nav__link" href="text.html"
+                >Пользовательское соглашение</a
+              >
+              <a class="nav__link" href="">Термины и условия</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- Header -->
+
+      <!-- Intro -->
+      <div class="intro intro--blog"></div>
+      <!-- Intro -->
+
+      <!-- Main section -->
+      <section class="section section--last">
+        <div class="container">
+          <!-- Main -->
+          <main class="main">
+            <div class="main__col">
+              <h1 class="section__title"><span>Интересно</span> почитать</h1>
+              <!-- Articles -->
+              <div class="articles articles--column">
+                <article class="articles__item">
+                  <h4 class="articles__title">
+                    <a href="#">Новостной заголовок</a>
+                  </h4>
+                  <div class="articles__text">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Fuga quis facere fugiat soluta. Iste, reiciendis?
+                      Asperiores laborum libero adipisci eveniet quod sequi,
+                      odit non odio temporibus porro commodi qui doloribus.
+                    </p>
+                    <time class="articles__date" pubdate="21-05-2022 19:00"
+                      >21 may, 2022</time
+                    >
+                  </div>
+                </article>
+                <article class="articles__item">
+                  <h4 class="articles__title">
+                    <a href="#">Новостной заголовок</a>
+                  </h4>
+                  <div class="articles__text">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Fuga quis facere fugiat soluta. Iste, reiciendis?
+                      Asperiores laborum libero adipisci eveniet quod sequi,
+                      odit non odio temporibus porro commodi qui doloribus.
+                    </p>
+                    <time class="articles__date" pubdate="21-05-2022 19:00"
+                      >21 may, 2022</time
+                    >
+                  </div>
+                </article>
+                <article class="articles__item">
+                  <h4 class="articles__title">
+                    <a href="#">Новостной заголовок</a>
+                  </h4>
+                  <div class="articles__text">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Fuga quis facere fugiat soluta. Iste, reiciendis?
+                      Asperiores laborum libero adipisci eveniet quod sequi,
+                      odit non odio temporibus porro commodi qui doloribus.
+                    </p>
+                    <time class="articles__date" pubdate="21-05-2022 19:00"
+                      >21 may, 2022</time
+                    >
+                  </div>
+                </article>
+                <article class="articles__item">
+                  <h4 class="articles__title">
+                    <a href="#">Новостной заголовок</a>
+                  </h4>
+                  <div class="articles__text">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Fuga quis facere fugiat soluta. Iste, reiciendis?
+                      Asperiores laborum libero adipisci eveniet quod sequi,
+                      odit non odio temporibus porro commodi qui doloribus.
+                    </p>
+                    <time class="articles__date" pubdate="21-05-2022 19:00"
+                      >21 may, 2022</time
+                    >
+                  </div>
+                </article>
+              </div>
+              <!-- Articles -->
+
+              <a href="index.html" class="btn btn--orange"
+                ><span>Вернуться на главную</span></a
+              >
+            </div>
+            <div class="main__col">
+              <div class="request-form request-form--right">
+                <div class="request-form__header">
+                  <h3 class="request-form__title">Получить обратный звонок</h3>
+                  <div class="request-form__text">
+                    Оставьте заявку и наш менеджер с Вами свяжется
+                  </div>
+                </div>
+                <div class="request-form__content">
+                  <form class="form" action="/" method="post">
+                    <div class="form__group">
+                      <div class="form__group-user"></div>
+                      <input class="input" type="text" placeholder="Ваше имя" />
+                    </div>
+                    <div class="form__group">
+                      <div class="form__group-tel"></div>
+                      <input
+                        class="input"
+                        type="tel"
+                        placeholder="Ваш телефон"
+                      />
+                    </div>
+                    <div class="form__group">
+                      <div class="form__group-email"></div>
+                      <input
+                        class="input"
+                        type="email"
+                        placeholder="Ваш email"
+                      />
+                    </div>
+                    <button class="btn btn--orange btn--block" type="submit">
+                      <span>Перезвоните мне</span>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </main>
+          <!-- Main -->
+        </div>
+      </section>
+      <!-- Main section -->
+
+      <!-- Footer section  -->
+      <footer class="footer">
+        <div class="container">
+          <img src="./assets/images/footer/logo-black.svg" alt="" />
+          <address class="footer__contacts">
+            <p>Москва, Улица Комсомольская 43</p>
+            <p>
+              Звоните нам:
+              <a href="tel:+7(123)-456-78-90">+7(123)-456-78-90</a> или пишите
+              на почту:
+              <a href="mailto:translogistic@example.com"
+                >translogistic@example.com</a
+              >
+            </p>
+          </address>
+
+          <nav class="footer__nav">
+            <a href="">Термины &amp; Условия</a>
+            <a href="">Пользовательское соглашение</a>
+            <a href="">Наш блог</a>
           </nav>
         </div>
-      </div>
-    </header>
-    <!-- Header -->
-
-    <!-- Intro -->
-    <div class="intro intro--blog"></div>
-    <!-- Intro -->
-
-    <!-- Main section -->
-    <section class="section">
-      <div class="container">
-        <!-- Main -->
-        <main class="main">
-          <div class="main__col">
-            <h1 class="section__title"><span>Интересно</span> почитать</h1>
-            <!-- Articles -->
-            <div class="articles articles--column">
-              <article class="articles__item">
-                <h4 class="articles__title">
-                  <a href="#">Новостной заголовок</a>
-                </h4>
-                <div class="articles__text">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fuga quis facere fugiat soluta. Iste, reiciendis? Asperiores
-                    laborum libero adipisci eveniet quod sequi, odit non odio
-                    temporibus porro commodi qui doloribus.
-                  </p>
-                  <time class="articles__date" pubdate="21-05-2022 19:00"
-                    >21 may, 2022</time
-                  >
-                </div>
-              </article>
-              <article class="articles__item">
-                <h4 class="articles__title">
-                  <a href="#">Новостной заголовок</a>
-                </h4>
-                <div class="articles__text">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fuga quis facere fugiat soluta. Iste, reiciendis? Asperiores
-                    laborum libero adipisci eveniet quod sequi, odit non odio
-                    temporibus porro commodi qui doloribus.
-                  </p>
-                  <time class="articles__date" pubdate="21-05-2022 19:00"
-                    >21 may, 2022</time
-                  >
-                </div>
-              </article>
-              <article class="articles__item">
-                <h4 class="articles__title">
-                  <a href="#">Новостной заголовок</a>
-                </h4>
-                <div class="articles__text">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fuga quis facere fugiat soluta. Iste, reiciendis? Asperiores
-                    laborum libero adipisci eveniet quod sequi, odit non odio
-                    temporibus porro commodi qui doloribus.
-                  </p>
-                  <time class="articles__date" pubdate="21-05-2022 19:00"
-                    >21 may, 2022</time
-                  >
-                </div>
-              </article>
-              <article class="articles__item">
-                <h4 class="articles__title">
-                  <a href="#">Новостной заголовок</a>
-                </h4>
-                <div class="articles__text">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fuga quis facere fugiat soluta. Iste, reiciendis? Asperiores
-                    laborum libero adipisci eveniet quod sequi, odit non odio
-                    temporibus porro commodi qui doloribus.
-                  </p>
-                  <time class="articles__date" pubdate="21-05-2022 19:00"
-                    >21 may, 2022</time
-                  >
-                </div>
-              </article>
-            </div>
-            <!-- Articles -->
-
-            <a href="index.html" class="btn btn--orange"
-              ><span>Вернуться на главную</span></a
-            >
-          </div>
-          <div class="main__col">
-            <div class="request-form request-form--right">
-              <div class="request-form__header">
-                <h3 class="request-form__title">Получить обратный звонок</h3>
-                <div class="request-form__text">
-                  Оставьте заявку и наш менеджер с Вами свяжется
-                </div>
-              </div>
-              <div class="request-form__content">
-                <form class="form" action="/" method="post">
-                  <div class="form__group">
-                    <div class="form__group-user"></div>
-                    <input class="input" type="text" placeholder="Ваше имя" />
-                  </div>
-                  <div class="form__group">
-                    <div class="form__group-tel"></div>
-                    <input class="input" type="tel" placeholder="Ваш телефон" />
-                  </div>
-                  <div class="form__group">
-                    <div class="form__group-email"></div>
-                    <input class="input" type="email" placeholder="Ваш email" />
-                  </div>
-                  <button class="btn btn--orange btn--block" type="submit">
-                    <span>Перезвоните мне</span>
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </main>
-        <!-- Main -->
-      </div>
-    </section>
-    <!-- Main section -->
-
-    <!-- Footer section  -->
-    <footer class="footer">
-      <div class="container">
-        <img src="./assets/images/footer/logo-black.svg" alt="" />
-        <address class="footer__contacts">
-          <p>Москва, Улица Комсомольская 43</p>
-          <p>
-            Звоните нам:
-            <a href="tel:+7(123)-456-78-90">+7(123)-456-78-90</a> или пишите на
-            почту:
-            <a href="mailto:translogistic@example.com"
-              >translogistic@example.com</a
-            >
-          </p>
-        </address>
-
-        <nav class="footer__nav">
-          <a href="">Термины &amp; Условия</a>
-          <a href="">Пользовательское соглашение</a>
-          <a href="">Наш блог</a>
-        </nav>
-      </div>
-    </footer>
-    <!-- Footer section  -->
+      </footer>
+      <!-- Footer section  -->
+    </div>
   </body>
 </html>
