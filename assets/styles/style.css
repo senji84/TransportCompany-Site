@@ -1169,7 +1169,27 @@ ol {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 867px) {
+  /* Team */
+  .team {
+    flex-direction: column;
+  }
+
+  .team__col {
+    width: 100%;
+  }
+
+  .team__col:last-child {
+    margin-bottom: 0;
+  }
+
+  .team__item {
+    width: 370px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
   /* Header */
   .header__inner {
     height: 50px;
@@ -1239,6 +1259,22 @@ ol {
     order: 2;
     position: static;
     margin-bottom: 25px;
+  }
+
+  /* Benefits */
+  .benefits {
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .benefits__col {
+    width: 100%;
+  }
+
+  .benefits-list {
+    margin-bottom: 30px;
+    max-width: none;
   }
 }
 
