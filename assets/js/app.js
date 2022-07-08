@@ -1,23 +1,43 @@
 $(function () {
   let intro = $('#intro');
   let header = $('#header');
+  let introH = intro.innerHeight();
+  let headerH = header.innerHeight();
+
+  //   Header class on scroll
 
   headerScroll();
 
-  $(window).on('scroll resize', function () {
+  $(window).on('scroll  resize', function () {
     headerScroll();
   });
 
   function headerScroll() {
-    let introHeight = intro.innerHeight();
-    let headerHeight = header.innerHeight();
+    introH = intro.innerHeight();
+    headerH = header.innerHeight();
 
     let scrollTop = $(this).scrollTop();
 
-    if (scrollTop >= introHeight - headerHeight) {
+    if (scrollTop >= introH - headerH) {
       header.addClass('header--dark');
     } else {
       header.removeClass('header--dark');
     }
   }
+
+  //   Smooth Scroll to sections
+
+  $('[data-scroll]').on('click', function (event) {
+    event.preventDefault();
+
+    let scrollEl = $(this).data('scroll');
+    let scrollElPos = $(scrollEl).offset().top;
+
+    $('html, body').animate(
+      {
+        scrollTop: scrollElPos - headerH,
+      },
+      500
+    );
+  });
 });
