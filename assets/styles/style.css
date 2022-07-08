@@ -828,9 +828,8 @@ ol {
 /* News */
 .articles {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin: 0 -15px 30px;
 }
 
 .articles--column {
@@ -847,6 +846,7 @@ ol {
   width: 100%;
   max-width: 500px;
   margin-bottom: 20px;
+  padding: 0 15px;
 }
 
 .articles__title {
@@ -1136,8 +1136,17 @@ ol {
     text-align: center;
   }
 
-  .clients {
-    background-position: center top;
+  /* Intro */
+  .intro__title {
+    font-size: 90px;
+  }
+
+  .intro__title-amp {
+    font-size: 120px;
+
+    right: auto;
+    left: 50%;
+    transform: translate3D(-50%, -50%, 0);
   }
 
   /* Services */
@@ -1147,6 +1156,7 @@ ol {
 
   /* Clients */
   .clients {
+    background-position: center top;
     flex-direction: column;
     margin-bottom: 30px;
   }
@@ -1187,12 +1197,23 @@ ol {
     width: 370px;
     margin: 0 auto;
   }
+
+  /* Footer */
+  .footer {
+    background-size: 370px auto;
+    background-position: left -30px bottom -30px, right -30px bottom -30px;
+  }
 }
 
 @media (max-width: 767px) {
   /* Header */
   .header__inner {
     height: 50px;
+  }
+
+  /* Section */
+  .section--last {
+    margin-bottom: 20px;
   }
 
   /* Nav */
@@ -1223,7 +1244,7 @@ ol {
     display: block;
   }
 
-  /* Intro inner */
+  /* Intro */
   .intro {
     margin-bottom: 0;
   }
@@ -1235,23 +1256,20 @@ ol {
     height: auto;
   }
 
+  .intro__title {
+    font-size: 70px;
+  }
+
+  .intro__title-amp {
+    font-size: 100px;
+  }
+
   .intro__text {
     order: 1;
     width: 100%;
     margin: 0;
     margin-bottom: 35px;
     text-align: center;
-  }
-
-  .intro__title {
-    font-size: 90px;
-  }
-
-  .intro__title-amp {
-    font-size: 120px;
-    right: auto;
-    left: 50%;
-    transform: translate3D(-50%, -50%, 0);
   }
 
   /* Request form */
@@ -1276,9 +1294,52 @@ ol {
     margin-bottom: 30px;
     max-width: none;
   }
+
+  /* Mission */
+  .our__mission {
+    font-size: 70px;
+  }
+
+  .mission {
+    padding: 40px 20px;
+    margin-top: -10px;
+  }
+
+  .mission__title {
+    font-size: 24px;
+  }
+
+  .mission__subtitle {
+    font-size: 18px;
+  }
+
+  /* Articles */
+  .articles {
+    flex-wrap: wrap;
+  }
+
+  .articles__item {
+    max-width: none;
+  }
+
+  /* Footer */
+  .footer {
+    background-size: 250px auto;
+    background-position: left -20px bottom -20px, right -20px bottom -20px;
+  }
 }
 
 @media (max-width: 575px) {
+  /* Request form */
+  .request-form__header,
+  .request-form__content {
+    padding: 20;
+  }
+
+  .request-form__title {
+    font-size: 25px;
+  }
+
   /* Intro inner */
   .intro__title {
     font-size: 90px;
@@ -1292,8 +1353,21 @@ ol {
   }
 
   /* Services */
+  .services {
+    padding-top: 70px;
+    padding-bottom: 10px;
+  }
+
   .services__main-title {
+    width: 100%;
+    margin-right: 0;
+
     font-size: 60px;
+    text-align: center;
+
+    bottom: auto;
+    right: auto;
+    top: 20px;
   }
 
   .services__item {
@@ -1319,11 +1393,74 @@ ol {
     max-width: none;
     width: 33.33333%;
     margin-right: 0;
-    padding: 0 15px;
+    padding: 0 5px;
   }
 
   .clients__list-logo {
     display: block;
     margin: 0 auto;
+  }
+
+  /* Mission */
+  .our__mission {
+    font-size: 40px;
+  }
+
+  .mission {
+    padding: 20px 20px;
+    margin-top: -7px;
+  }
+
+  .mission__title {
+    font-size: 20px;
+  }
+
+  .mission__subtitle {
+    font-size: 16px;
+  }
+
+  /* Footer */
+  .footer {
+    background-size: 250px auto;
+    background-position: left -120px bottom -80px, right -120px bottom -80px;
+  }
+}
+
+@media (max-width: 400px) {
+  /* Intro */
+  .intro__title {
+    font-size: 70px;
+  }
+  /* Services */
+  .services__main-title {
+    font-size: 40px;
+  }
+  /* Team */
+  .team__item {
+    width: 250px;
+  }
+
+  /* Clients */
+  .clients {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  /* Intro */
+  .intro__inner {
+    padding-top: 60px;
+  }
+
+  .intro__text {
+    margin-bottom: 15px;
+  }
+
+  .intro__title {
+    font-size: 40px;
+  }
+
+  .intro__title-amp {
+    font-size: 50px;
   }
 }
