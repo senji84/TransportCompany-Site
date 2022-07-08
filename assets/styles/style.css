@@ -5,9 +5,11 @@ font-family: 'PT Sans', sans-serif; */
 body {
   margin: 0;
   font-family: 'PT Sans', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.4;
   color: #585858;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body.no-scroll {
@@ -98,7 +100,7 @@ ol {
 .nav {
   display: flex;
   height: 100%;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .nav__link {
@@ -159,7 +161,7 @@ ol {
 }
 
 .intro__countries {
-  font-size: 15px;
+  font-size: 16px;
   color: #fff;
 }
 
@@ -220,7 +222,7 @@ ol {
 
 .request-form__text {
   margin-top: 10px;
-  font-size: 15px;
+  font-size: 16px;
   color: #fff;
 }
 
@@ -473,7 +475,7 @@ ol {
   margin-top: auto;
   margin-bottom: 20px;
   color: #585858;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .services__footer {
@@ -482,7 +484,7 @@ ol {
 
 .services__link {
   display: inline-block;
-  font-size: 15px;
+  font-size: 16px;
   color: #004af2;
   text-decoration: none;
   transition: color 0.1s linear;
@@ -605,13 +607,13 @@ ol {
 }
 
 .reviews__company {
-  font-size: 15px;
+  font-size: 16px;
   color: #2c2c2c;
 }
 
 .reviews__content {
   color: #585858;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.8;
 }
 
@@ -688,7 +690,7 @@ ol {
 }
 
 .benefits-list__text {
-  font-size: 15px;
+  font-size: 16 px;
   color: #585858;
 }
 
@@ -834,12 +836,17 @@ ol {
 
 .articles--column {
   flex-direction: column;
+  margin-bottom: 75px;
 }
 
 .articles--column .articles__item {
   max-width: none;
   width: 100%;
   margin-bottom: 45px;
+}
+
+.articles--column .articles__item:last-child {
+  margin-bottom: 0;
 }
 
 .articles__item {
@@ -850,7 +857,7 @@ ol {
 }
 
 .articles__title {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 700;
   color: #2c2c2c;
 
@@ -867,7 +874,7 @@ ol {
 }
 
 .articles__text {
-  font-size: 15px;
+  font-size: 16px;
   color: #585858;
 
   margin-bottom: 15px;
@@ -930,11 +937,9 @@ ol {
 /* Modal */
 .modal {
   display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
+  padding: 30px 15px;
 
   background-color: rgba(0, 0, 0, 0.9);
 
@@ -942,14 +947,23 @@ ol {
   top: 0;
   left: 0;
   z-index: 1000;
+  overflow: auto;
 }
 
 .modal.show {
-  display: flex;
+  display: block;
 }
 
 .modal__inner {
-  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+.modal__content {
+  max-width: 400px;
+  width: 100%;
   padding: 25px;
   position: relative;
 
@@ -974,7 +988,7 @@ ol {
 }
 
 .modal__text {
-  font-size: 15px;
+  font-size: 16px;
   color: #2c2c2c;
   text-align: center;
 }
@@ -995,7 +1009,7 @@ ol {
 }
 
 .modal__contacts {
-  font-size: 15px;
+  font-size: 16px;
   color: #2c2c2c;
   font-style: normal;
 }
@@ -1039,16 +1053,18 @@ ol {
 }
 
 .modal__icon {
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
 }
 
 /* Main */
 .main {
   display: flex;
+  margin: 0 -15px;
 }
 
 .main__col {
   width: 50%;
+  padding: 0 15px;
 }
 
 /* Text */
@@ -1091,7 +1107,7 @@ ol {
 }
 
 .text h5 {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .text ul,
@@ -1141,6 +1157,11 @@ ol {
     font-size: 90px;
   }
 
+  .intro--blog,
+  .intro--text {
+    height: 250px;
+  }
+
   .intro__title-amp {
     font-size: 120px;
 
@@ -1176,6 +1197,15 @@ ol {
 
   .clients__list li {
     max-width: 130px;
+  }
+
+  /* Main */
+  .main__col--left {
+    width: 55%;
+  }
+
+  .main__col--right {
+    width: 45%;
   }
 }
 
@@ -1322,10 +1352,28 @@ ol {
     max-width: none;
   }
 
+  .articles--column {
+    margin-bottom: 30px;
+  }
+
   /* Footer */
   .footer {
     background-size: 250px auto;
     background-position: left -20px bottom -20px, right -20px bottom -20px;
+  }
+
+  /* Main */
+  .main {
+    flex-direction: column;
+  }
+
+  .main__col {
+    width: 100%;
+  }
+
+  /* Request */
+  .request-form--right {
+    margin: 50px auto 0;
   }
 }
 
@@ -1423,6 +1471,12 @@ ol {
   .footer {
     background-size: 250px auto;
     background-position: left -120px bottom -80px, right -120px bottom -80px;
+  }
+
+  /* Modal */
+  .modal__close {
+    right: 0;
+    top: -30px;
   }
 }
 
