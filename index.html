@@ -20,17 +20,15 @@
       <header class="header" id="header">
         <div class="container">
           <div class="header__inner">
-            <a href="index.html"
+            <a href="#" data-scroll="#intro"
               ><img
                 class="img img--logo"
                 src="./assets/images/header/logo.svg"
                 alt=""
             /></a>
 
-            <nav class="nav">
-              <a class="nav__link active" data-scroll="#services" href="#"
-                >Сервисы</a
-              >
+            <nav class="nav" id="nav">
+              <a class="nav__link" data-scroll="#services" href="#">Сервисы</a>
               <a class="nav__link" data-scroll="#clients" href="#">Клиенты</a>
               <a class="nav__link" data-scroll="#benefits" href="#"
                 >Преимущества</a
@@ -103,7 +101,7 @@
       <!-- Intro -->
 
       <!-- Services -->
-      <section class="section" id="services">
+      <section class="section" id="services" data-scrollspy="#services">
         <div class="container">
           <!-- Services -->
           <div class="services">
@@ -169,7 +167,7 @@
       <!-- Services -->
 
       <!-- Clients section -->
-      <section class="section" id="clients">
+      <section class="section" id="clients" data-scrollspy="#clients">
         <div class="container">
           <h2 class="section__title"><span>Наши</span> клиенты</h2>
 
@@ -300,7 +298,7 @@
       <!-- Clients section -->
 
       <!-- Benefits section -->
-      <section class="section" id="benefits">
+      <section class="section" id="benefits" data-scrollspy="#benefits">
         <!-- Container -->
         <div class="container">
           <h2 class="section__title"><span>Наши</span> преимущества</h2>
@@ -363,7 +361,7 @@
       <!-- Benefits section -->
 
       <!-- Team section -->
-      <section class="section section--gray" id="team">
+      <section class="section section--gray" id="team" data-scrollspy="#team">
         <!-- Container  -->
         <div class="container">
           <h2 class="section__title"><span>Наша</span> команда</h2>
@@ -482,7 +480,7 @@
       <!-- Team section -->
 
       <!-- Mission section -->
-      <section class="section" id="mission">
+      <section class="section" id="mission" data-scrollspy="#mission">
         <!-- Container  -->
         <div class="container rel">
           <h2 class="our__mission">Наша миссия</h2>
@@ -507,7 +505,7 @@
       <!-- Mission section -->
 
       <!-- Articles section -->
-      <section class="section section--last" id="#news">
+      <section class="section section--last" id="news" data-scrollspy="#news">
         <!-- Container  -->
         <div class="container">
           <h2 class="section__title"><span>Интересно</span> почитать</h2>
