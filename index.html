@@ -577,62 +577,67 @@
       <!-- Modal -->
       <div class="modal" id="becomeClientModal">
         <div class="modal__inner">
-          <div class="modal__header">
-            <h4 class="modal__title">Нужно доставить груз?<br />Мы поможем!</h4>
-            <div class="modal__text">
-              <p>Заполните маленькую форму и мы перезвоним</p>
+          <div class="modal__content">
+            <div class="modal__header">
+              <h4 class="modal__title">
+                Нужно доставить груз?<br />Мы поможем!
+              </h4>
+              <div class="modal__text">
+                <p>Заполните маленькую форму и мы перезвоним</p>
+              </div>
             </div>
-          </div>
 
-          <form class="form" action="/" method="post">
-            <div class="form__group">
-              <div class="form__group-user--black"></div>
-              <input
-                class="input input--dark"
-                type="text"
-                placeholder="Ваше имя"
-              />
+            <form class="form" action="/" method="post">
+              <div class="form__group">
+                <div class="form__group-user--black"></div>
+                <input
+                  class="input input--dark"
+                  type="text"
+                  placeholder="Ваше имя"
+                />
+              </div>
+              <div class="form__group">
+                <div class="form__group-tel--black"></div>
+                <input
+                  class="input input--dark"
+                  type="tel"
+                  placeholder="Ваш телефон"
+                />
+              </div>
+              <div class="form__group">
+                <div class="form__group-email--black"></div>
+                <input
+                  class="input input--dark"
+                  type="email"
+                  placeholder="Ваш email"
+                />
+              </div>
+              <button class="btn btn--orange btn--block" type="submit">
+                <span>Перезвоните мне</span>
+              </button>
+            </form>
+
+            <div class="modal__footer">
+              <h4 class="modal__footer-title">Наши контакты</h4>
+              <address class="modal__contacts">
+                <p>Москва, Улица Комсомольская 43</p>
+                <p>
+                  Phone: <a href="tel:+7(123)-456-78-90">+7(123)-456-78-90</a>
+                </p>
+                <p>
+                  Email:
+                  <a href="mailto:translogistic@example.com"
+                    >translogistic@example.com</a
+                  >
+                </p>
+              </address>
             </div>
-            <div class="form__group">
-              <div class="form__group-tel--black"></div>
-              <input
-                class="input input--dark"
-                type="tel"
-                placeholder="Ваш телефон"
-              />
-            </div>
-            <div class="form__group">
-              <div class="form__group-email--black"></div>
-              <input
-                class="input input--dark"
-                type="email"
-                placeholder="Ваш email"
-              />
-            </div>
-            <button class="btn btn--orange btn--block" type="submit">
-              <span>Перезвоните мне</span>
+
+            <button class="modal__close">
+              <img src="./assets/images/modal/close.svg" alt="" />
             </button>
-          </form>
-
-          <div class="modal__footer">
-            <h4 class="modal__footer-title">Наши контакты</h4>
-            <address class="modal__contacts">
-              <p>Москва, Улица Комсомольская 43</p>
-              <p>
-                Phone: <a href="tel:+7(123)-456-78-90">+7(123)-456-78-90</a>
-              </p>
-              <p>
-                Email:
-                <a href="mailto:translogistic@example.com"
-                  >translogistic@example.com</a
-                >
-              </p>
-            </address>
           </div>
-
-          <button class="modal__close">
-            <img src="./assets/images/modal/close.svg" alt="" />
-          </button>
+          <!-- Modal content -->
         </div>
         <!-- Modal inner -->
       </div>
