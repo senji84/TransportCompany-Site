@@ -28,12 +28,19 @@
             /></a>
 
             <nav class="nav">
-              <a class="nav__link active" href="">Сервисы</a>
-              <a class="nav__link" href="">Клиенты</a>
-              <a class="nav__link" href="">Преимущества</a>
-              <a class="nav__link" href="">Команда</a>
-              <a class="nav__link" href="blog.html">Блог</a>
-              <a class="nav__link" href="">Наши контакты</a>
+              <a class="nav__link active" data-scroll="#services" href="#"
+                >Сервисы</a
+              >
+              <a class="nav__link" data-scroll="#clients" href="#">Клиенты</a>
+              <a class="nav__link" data-scroll="#benefits" href="#"
+                >Преимущества</a
+              >
+              <a class="nav__link" data-scroll="#team" href="#">Команда</a>
+              <a class="nav__link" data-scroll="#mission" href="#"
+                >Наша миссия</a
+              >
+              <a class="nav__link" data-scroll="#news" href="blog.html">Блог</a>
+              <a class="nav__link" href="#">Наши контакты</a>
             </nav>
 
             <button class="burger" type="button">
@@ -96,7 +103,7 @@
       <!-- Intro -->
 
       <!-- Services -->
-      <section class="section">
+      <section class="section" id="services">
         <div class="container">
           <!-- Services -->
           <div class="services">
@@ -162,7 +169,7 @@
       <!-- Services -->
 
       <!-- Clients section -->
-      <section class="section">
+      <section class="section" id="clients">
         <div class="container">
           <h2 class="section__title"><span>Наши</span> клиенты</h2>
 
@@ -293,7 +300,7 @@
       <!-- Clients section -->
 
       <!-- Benefits section -->
-      <section class="section">
+      <section class="section" id="benefits">
         <!-- Container -->
         <div class="container">
           <h2 class="section__title"><span>Наши</span> преимущества</h2>
@@ -356,7 +363,7 @@
       <!-- Benefits section -->
 
       <!-- Team section -->
-      <section class="section section--gray">
+      <section class="section section--gray" id="team">
         <!-- Container  -->
         <div class="container">
           <h2 class="section__title"><span>Наша</span> команда</h2>
@@ -475,7 +482,7 @@
       <!-- Team section -->
 
       <!-- Mission section -->
-      <section class="section">
+      <section class="section" id="mission">
         <!-- Container  -->
         <div class="container rel">
           <h2 class="our__mission">Наша миссия</h2>
@@ -500,7 +507,7 @@
       <!-- Mission section -->
 
       <!-- Articles section -->
-      <section class="section section--last">
+      <section class="section section--last" id="#news">
         <!-- Container  -->
         <div class="container">
           <h2 class="section__title"><span>Интересно</span> почитать</h2>
@@ -683,7 +690,7 @@
       <!-- Modal -->
     </div>
 
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./assets/js/app.js"></script>
   </body>
 </html>
