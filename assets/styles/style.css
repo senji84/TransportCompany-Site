@@ -133,10 +133,7 @@ ol {
 
 /* Intro */
 .intro {
-  height: auto;
   margin-bottom: 30px;
-  background: #000;
-
   position: relative;
 }
 
@@ -157,10 +154,25 @@ ol {
   height: 100%;
   overflow: hidden;
 
+  background: #04222a url('../images/intro/intro-bg.jpg') no-repeat center;
+  background-size: cover;
+
   position: absolute;
   left: 0;
   top: 0;
   z-index: 1;
+}
+
+.intro__slider .slider-item {
+  display: none;
+}
+
+.intro__slider.slick-initialized {
+  background: #04222a;
+}
+
+.intro__slider.slick-initialized .slider-item {
+  display: block;
 }
 
 .intro__slider .slick-list,
@@ -629,6 +641,14 @@ ol {
 /* Reviews */
 .reviews {
   position: relative;
+
+  height: 200px;
+  background: url('../images/slider/ajax-loader.gif') no-repeat center;
+}
+
+.reviews.slick-initialized {
+  background: none;
+  height: auto;
 }
 
 .reviews::before,
@@ -696,6 +716,7 @@ ol {
 
 .reviews__item {
   padding: 0 10px;
+  display: none;
 }
 
 .reviews__header {
@@ -1325,7 +1346,7 @@ ol {
   .clients {
     background-position: center top;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
 
   .clients__logos,
@@ -1352,6 +1373,11 @@ ol {
 
   .main__col--right {
     width: 45%;
+  }
+
+  /* Slider */
+  .intro__slider-arrows {
+    display: none;
   }
 }
 
@@ -1638,11 +1664,6 @@ ol {
   /* Team */
   .team__item {
     width: 250px;
-  }
-
-  /* Clients */
-  .clients {
-    margin-bottom: 10px;
   }
 }
 
