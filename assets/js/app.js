@@ -142,4 +142,17 @@ $(function () {
   $('#introSliderPrev').on('click', function () {
     introSlider.slick('slickNext');
   });
+
+  //   ReviewsSlider
+  let reviewsSlider = $('#reviewsSlider');
+
+  reviewsSlider.slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+
+    speed: 500,
+  });
 });
