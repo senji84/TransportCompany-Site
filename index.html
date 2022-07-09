@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=PT+Sans&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./assets/styles/slick.css" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
     <title>Center Logistic</title>
   </head>
@@ -55,6 +56,26 @@
 
       <!-- Intro -->
       <div class="intro" id="intro">
+        <!-- Intro slider -->
+        <div class="intro__slider" id="introSlider">
+          <div class="slider__item">
+            <div
+              class="intro__slider-item"
+              style="
+                background-image: url('./assets/images/intro/intro-bg.jpg');
+              "
+            ></div>
+          </div>
+          <div class="slider__item">
+            <div
+              class="intro__slider-item"
+              style="
+                background-image: url('./assets/images/intro/intro-bg.jpg');
+              "
+            ></div>
+          </div>
+        </div>
+        <!-- Intro slider -->
         <div class="container">
           <!-- Intro__inner -->
           <div class="intro__inner">
@@ -93,6 +114,22 @@
                 <span class="intro__title-amp">&amp;</span>
                 Trans<br />Logistic
               </h1>
+            </div>
+            <div class="intro__slider-arrows">
+              <button
+                id="introSliderPrev"
+                class="intro__slider-btn intro__slider-prev"
+                type="butoon"
+              >
+                Prev
+              </button>
+              <button
+                id="introSliderNext"
+                class="intro__slider-btn intro__slider-next"
+                type="butoon"
+              >
+                Next
+              </button>
             </div>
           </div>
           <!-- Intro__inner -->
@@ -693,6 +730,7 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
     <script src="./assets/js/app.js"></script>
   </body>
 </html>
