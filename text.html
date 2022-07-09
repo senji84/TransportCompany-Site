@@ -7,6 +7,33 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/images/favicons/manifest.json" />
+    <link
+      rel="mask-icon"
+      href="./assets/images/favicons/safari-pinned-tab.svg"
+      color="#004AF2"
+    />
+    <meta name="msapplication-TileColor" content="#004AF2" />
+    <meta name="theme-color" content="#004AF2" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=PT+Sans&display=swap"
       rel="stylesheet"
@@ -17,11 +44,14 @@
   <body>
     <div class="page">
       <!-- Header -->
-      <header class="header">
+      <header class="header" id="header">
         <div class="container">
           <div class="header__inner">
             <a href="index.html"
-              ><img src="./assets/images/header/logo.svg" alt=""
+              ><img
+                class="img img--logo"
+                src="./assets/images/header/logo.svg"
+                alt=""
             /></a>
 
             <nav class="nav">
@@ -30,7 +60,6 @@
               <a class="nav__link active" href="text.html"
                 >Пользовательское соглашение</a
               >
-              <a class="nav__link" href="">Термины и условия</a>
             </nav>
 
             <button class="burger" type="button">
@@ -46,7 +75,7 @@
       <!-- Header -->
 
       <!-- Intro -->
-      <div class="intro intro--text"></div>
+      <div class="intro intro--text" id="intro"></div>
       <!-- Intro -->
 
       <!-- Text section -->
@@ -121,16 +150,15 @@
           </address>
 
           <nav class="footer__nav">
-            <a href="">Термины &amp; Условия</a>
-            <a href="">Пользовательское соглашение</a>
-            <a href="">Наш блог</a>
+            <a href="text.html">Пользовательское соглашение</a>
+            <a href="blog.html">Наш блог</a>
           </nav>
         </div>
       </footer>
       <!-- Footer section  -->
     </div>
 
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.slim.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/app.js"></script>
   </body>
 </html>
