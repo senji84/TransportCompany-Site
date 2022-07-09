@@ -1436,6 +1436,10 @@ ol {
     z-index: 1;
   }
 
+  .nav.show {
+    display: block;
+  }
+
   .nav__link {
     display: block;
     padding: 10px 20px;

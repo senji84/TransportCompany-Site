@@ -1,4 +1,14 @@
 $(function () {
+  // burger
+  let navToggle = $('#navToggle');
+  let nav = $('#nav');
+
+  navToggle.on('click', function (event) {
+    event.preventDefault();
+
+    nav.toggleClass('show');
+  });
+
   let intro = $('#intro');
   let header = $('#header');
   let introHeight = intro.innerHeight();
