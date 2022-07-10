@@ -802,6 +802,7 @@ body.show-nav .header {
 .reviews__photo {
   width: 100px;
   height: 100px;
+  object-fit: cover;
 
   position: relative;
   z-index: 2;
@@ -1170,6 +1171,7 @@ body.show-nav .header {
   justify-content: center;
   align-items: center;
   min-height: 100%;
+  padding: 15px;
 }
 
 .modal__content {
@@ -1619,10 +1621,6 @@ body.show-nav .header {
   }
 
   /* Intro inner */
-  .intro__title {
-    font-size: 90px;
-  }
-
   .intro__title-amp {
     font-size: 120px;
     right: auto;
@@ -1645,7 +1643,7 @@ body.show-nav .header {
 
     bottom: auto;
     right: auto;
-    top: 20px;
+    top: 5px;
   }
 
   .services__item {
@@ -1722,6 +1720,16 @@ body.show-nav .header {
   /* Team */
   .team__item {
     width: 250px;
+  }
+
+  /* Clients */
+  .clients__footer {
+    flex-direction: column;
+  }
+
+  .clients-love {
+    margin-top: 30px;
+    margin-left: 0;
   }
 }
 
