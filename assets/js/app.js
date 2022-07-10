@@ -53,7 +53,7 @@ $(function () {
     let scrollElPositon = $(scrollEl).offset().top;
 
     $('body').removeClass('show-nav');
-    navToggle.removeClass('avtive');
+    navToggle.removeClass('active');
     nav.removeClass('show');
 
     $('html, body').animate(

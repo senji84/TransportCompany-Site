@@ -1148,6 +1148,8 @@ body.show-nav .header {
 
 .footer__nav {
   font-size: 12px;
+  display: flex;
+  justify-content: center;
 }
 
 .footer__nav a {
@@ -1654,6 +1656,10 @@ body.show-nav .header {
   .request-form--right {
     margin: 50px auto 0;
   }
+
+  .center {
+    text-align: center;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1685,16 +1691,24 @@ body.show-nav .header {
     width: 100%;
     margin-right: 0;
 
-    font-size: 60px;
+    font-size: 40px;
     text-align: center;
 
     bottom: auto;
     right: auto;
-    top: 5px;
+    top: 20px;
   }
 
   .services__item {
     width: 100%;
+  }
+
+  .services__title {
+    font-size: 20px;
+  }
+
+  .services__text p {
+    font-size: 16px;
   }
 
   /* Section */
@@ -1703,7 +1717,7 @@ body.show-nav .header {
   }
 
   .section__title {
-    font-size: 35px;
+    font-size: 20px;
   }
 
   /* Clients */
@@ -1742,6 +1756,26 @@ body.show-nav .header {
     font-size: 16px;
   }
 
+  /* Benefits */
+  .benefits-list__title {
+    font-size: 18px;
+  }
+
+  .benefits-list__text p {
+    font-size: 16px;
+  }
+
+  /* Team */
+  .team__item {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  /* Articles */
+  .articles__title {
+    font-size: 20px;
+  }
+
   /* Footer */
   .footer {
     background-size: 250px auto;
@@ -1777,6 +1811,15 @@ body.show-nav .header {
   .clients-love {
     margin-top: 30px;
     margin-left: 0;
+  }
+
+  /* Footer */
+  .footer__nav {
+    flex-direction: column;
+  }
+
+  .footer__nav a:not(:last-child) {
+    margin-bottom: 5px;
   }
 }
 
