@@ -407,6 +407,20 @@ body.show-nav .header {
   color: #000;
 }
 
+.js-input.error {
+  color: #ff0000;
+  border-bottom-color: #ff0000;
+}
+
+.js-input.error:focus {
+  color: #ff0000;
+  border-bottom-color: #ff0000;
+}
+
+.js-input.error::placeholder {
+  color: #ff0000;
+}
+
 .form__group-user {
   background: url('../images/intro/user-icon.svg') no-repeat;
 
@@ -1188,9 +1202,42 @@ body.show-nav .header {
   transition: transform 0.2s ease-out, opacity 0.2s ease-out;
 }
 
+.modal__content-thanks {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 20px;
+  position: relative;
+}
+
+.modal__close-thanks {
+  width: 20px;
+  height: 20px;
+
+  background: none;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+
+  position: absolute;
+  top: -20px;
+  right: -30px;
+  z-index: 1;
+
+  transition: transform 0.2s linear;
+}
+
 .modal__header {
   text-align: center;
   margin-bottom: 25px;
+}
+
+.modal__header-thanks {
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .modal__title {

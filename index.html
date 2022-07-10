@@ -129,18 +129,30 @@
                 </div>
               </div>
               <div class="request-form__content">
-                <form class="form" action="/" method="post">
+                <form novalidate class="form js-form" action="/" method="post">
                   <div class="form__group">
                     <div class="form__group-user"></div>
-                    <input class="input" type="text" placeholder="Ваше имя" />
+                    <input
+                      class="input js-input"
+                      type="text"
+                      placeholder="Ваше имя"
+                    />
                   </div>
                   <div class="form__group">
                     <div class="form__group-tel"></div>
-                    <input class="input" type="tel" placeholder="Ваш телефон" />
+                    <input
+                      class="input js-input js-input-phone"
+                      type="tel"
+                      placeholder="Ваш телефон"
+                    />
                   </div>
                   <div class="form__group">
                     <div class="form__group-email"></div>
-                    <input class="input" type="email" placeholder="Ваш email" />
+                    <input
+                      class="input js-input js-input-email"
+                      type="email"
+                      placeholder="Ваш email"
+                    />
                   </div>
                   <button class="btn btn--orange btn--block" type="submit">
                     <span>Перезвоните мне</span>
@@ -828,37 +840,39 @@
       <!-- Modal -->
       <div class="modal" id="thanksModal">
         <div class="modal__inner">
-          <div class="modal__header">
-            <img
-              class="img modal__icon"
-              src="./assets/images/modal/tick.svg"
-              alt=""
-            />
-            <h4 class="modal__title">Спасибо за ваш запрос</h4>
-            <div class="modal__text">
-              <p>Мы перезвоним вам как можно скорее!</p>
+          <div class="modal__content-thanks">
+            <div class="modal__header-thanks">
+              <img
+                class="img modal__icon"
+                src="./assets/images/modal/tick.svg"
+                alt=""
+              />
+              <h4 class="modal__title">Спасибо за ваш запрос</h4>
+              <div class="modal__text">
+                <p>Мы перезвоним вам как можно скорее!</p>
+              </div>
             </div>
-          </div>
 
-          <div class="modal__footer">
-            <h4 class="modal__footer-title">Наши контакты</h4>
-            <address class="modal__contacts">
-              <p>Москва, Улица Комсомольская 43</p>
-              <p>
-                Phone: <a href="tel:+7(123)-456-78-90">+7(123)-456-78-90</a>
-              </p>
-              <p>
-                Email:
-                <a href="mailto:translogistic@example.com"
-                  >translogistic@example.com</a
-                >
-              </p>
-            </address>
-          </div>
+            <div class="modal__footer">
+              <h4 class="modal__footer-title">Наши контакты</h4>
+              <address class="modal__contacts">
+                <p>Москва, Улица Комсомольская 43</p>
+                <p>
+                  Phone: <a href="tel:+7(123)-456-78-90">+7(123)-456-78-90</a>
+                </p>
+                <p>
+                  Email:
+                  <a href="mailto:translogistic@example.com"
+                    >translogistic@example.com</a
+                  >
+                </p>
+              </address>
+            </div>
 
-          <button class="modal__close">
-            <img src="./assets/images/modal/close.svg" alt="" />
-          </button>
+            <button class="modal__close-thanks">
+              <img src="./assets/images/modal/close.svg" alt="" />
+            </button>
+          </div>
         </div>
         <!-- Modal inner -->
       </div>
@@ -868,6 +882,7 @@
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/validationForm.js"></script>
     <script src="./assets/js/app.js"></script>
   </body>
 </html>

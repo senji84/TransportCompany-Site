@@ -51,7 +51,7 @@
                 alt=""
             /></a>
 
-            <nav class="nav">
+            <nav class="nav" id="nav">
               <a class="nav__link" href="index.html">Главная</a>
               <a class="nav__link" href="blog.html">Блог</a>
               <a class="nav__link active" href="text.html"
@@ -59,12 +59,11 @@
               >
             </nav>
 
-            <button class="burger" type="button">
-              <img
-                class="burger__icon"
-                src="./assets/images/header/burger.svg"
-                alt=""
-              />
+            <button class="burger" type="button" id="navToggle">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
             </button>
           </div>
         </div>
@@ -155,4 +154,9 @@
       <!-- Footer section  -->
     </div>
   </body>
+
+  <script src="./assets/js/aos.js"></script>
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/slick.min.js"></script>
+  <script src="./assets/js/app.js"></script>
 </html>
