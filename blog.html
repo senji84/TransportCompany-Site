@@ -1,233 +1,161 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|PT+Sans&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/images/favicons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/images/favicons/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./assets/images/favicons/manifest.json" />
-    <link
-      rel="mask-icon"
-      href="./assets/images/favicons/safari-pinned-tab.svg"
-      color="#004AF2"
-    />
-    <meta name="msapplication-TileColor" content="#004AF2" />
-    <meta name="theme-color" content="#004AF2" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicons/manifest.json">
+    <link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#004AF2">
+    <meta name="msapplication-TileColor" content="#004AF2">
+    <meta name="theme-color" content="#004AF2">
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=PT+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/styles/style.css" />
-    <title>Center Logistic</title>
-  </head>
-  <body>
-    <div class="page">
-      <!-- Header -->
-      <header class="header" id="header">
+    <title>CenterLogistic</title>
+</head>
+<body>
+
+<div class="page">
+
+    <!-- Header -->
+    <header class="header" id="header">
         <div class="container">
-          <div class="header__inner">
-            <a href="index.html"
-              ><img
-                class="img img--logo"
-                src="./assets/images/header/logo.svg"
-                alt=""
-            /></a>
+            <div class="header__inner">
+                <a href="index.html">
+                    <img src="assets/images/logo.svg" alt="CenterLogistic">
+                </a>
 
-            <nav class="nav">
-              <a class="nav__link" href="index.html">Главная</a>
-              <a class="nav__link active" href="blog.html">Блог</a>
-              <a class="nav__link" href="text.html"
-                >Пользовательское соглашение</a
-              >
+                <nav class="nav">
+                    <a class="nav__link" href="index.html">Home</a>
+                    <a class="nav__link  active" href="blog.html">Blog</a>
+                    <a class="nav__link" href="text.html">Privacy Policy</a>
+                    <a class="nav__link" href="text2.html">Terms &amp; Conditions</a>
+                </nav>
+
+                <button class="burger" type="button">
+                    <img class="burger__icon" src="assets/images/burger.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Intro -->
+    <div class="intro  intro--blog" id="intro"></div>
+
+
+    <!-- Main -->
+    <div class="section  section--last">
+        <div class="container">
+            <main class="main">
+                <div class="main__col  main__col--left">
+                    <h1 class="section__title"><span>Interesting</span> to read</h1>
+
+                    <div class="articles  articles--column">
+                        <article class="articles__item">
+                            <h4 class="articles__title">
+                                <a href="#">News title</a>
+                            </h4>
+                            <div class="articles__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                            <time class="articles__date" datetime="2019-02-14 19:00">21 March, 2019</time>
+                        </article>
+
+                        <article class="articles__item">
+                            <h4 class="articles__title">
+                                <a href="#">News title</a>
+                            </h4>
+                            <div class="articles__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                            <time class="articles__date" datetime="2019-02-14 19:00">21 March, 2019</time>
+                        </article>
+
+                        <article class="articles__item">
+                            <h4 class="articles__title">
+                                <a href="#">News title</a>
+                            </h4>
+                            <div class="articles__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                            <time class="articles__date" datetime="2019-02-14 19:00">21 March, 2019</time>
+                        </article>
+
+                        <article class="articles__item">
+                            <h4 class="articles__title">
+                                <a href="#">News title</a>
+                            </h4>
+                            <div class="articles__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                            <time class="articles__date" datetime="2019-02-14 19:00">21 March, 2019</time>
+                        </article>
+                    </div><!-- /.articles -->
+
+                    <a class="btn  btn--orange" href="index.html">
+                        <span>Back to home</span>
+                    </a>
+                </div>
+
+                <div class="main__col  main__col--right">
+                    <div class="request-form  request-form--right">
+                        <div class="request-form__header">
+                            <h3 class="request-form__title">Get Callback</h3>
+                            <div class="request-form__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</div>
+                        </div>
+
+                        <div class="request-form__content">
+                            <form class="form" action="/" method="post">
+                                <div class="form__group">
+                                    <input class="input  input--user" type="text" placeholder="Your name">
+                                </div>
+                                <div class="form__group">
+                                    <input class="input  input--phone" type="tel" placeholder="Your phone">
+                                </div>
+                                <div class="form__group">
+                                    <input class="input  input--email" type="email" placeholder="Your email">
+                                </div>
+                                <button class="btn  btn--block  btn--orange" type="submit">
+                                    <span>Call me back</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div><!-- /.request-form -->
+                </div>
+            </main>
+        </div><!-- /.container -->
+    </div><!-- /.section -->
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <img src="assets/images/logo-black.svg" alt="">
+            <address class="footer__contacts">
+                <p>New York, Street, ZIP code</p>
+                <p>
+                Call Us: <a href="tel:+9948373123">+9948373123</a> or
+                E-mail: <a href="mailto:hello@centerlogistic.com">hello@centerlogistic.com</a>
+                </p>
+            </address>
+
+            <nav class="footer__nav">
+                <a href="text.html">Terms &amp; Contidions</a>
+                <a href="text2.html">Privacy Policy</a>
+                <a href="blog.html">Our blog</a>
             </nav>
-
-            <button class="burger" type="button">
-              <img
-                class="burger__icon"
-                src="./assets/images/header/burger.svg"
-                alt=""
-              />
-            </button>
-          </div>
         </div>
-      </header>
-      <!-- Header -->
+    </footer>
 
-      <!-- Intro -->
-      <div class="intro intro--blog" id="intro"></div>
-      <!-- Intro -->
+</div>
 
-      <!-- Main section -->
-      <section class="section section--last">
-        <div class="container">
-          <!-- Main -->
-          <main class="main">
-            <div class="main__col main__col--left">
-              <h1 class="section__title"><span>Интересно</span> почитать</h1>
-              <!-- Articles -->
-              <div class="articles articles--column">
-                <article class="articles__item">
-                  <h4 class="articles__title">
-                    <a href="#">Новостной заголовок</a>
-                  </h4>
-                  <div class="articles__text">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Fuga quis facere fugiat soluta. Iste, reiciendis?
-                      Asperiores laborum libero adipisci eveniet quod sequi,
-                      odit non odio temporibus porro commodi qui doloribus.
-                    </p>
-                    <time class="articles__date" pubdate="21-05-2022 19:00"
-                      >21 may, 2022</time
-                    >
-                  </div>
-                </article>
-                <article class="articles__item">
-                  <h4 class="articles__title">
-                    <a href="#">Новостной заголовок</a>
-                  </h4>
-                  <div class="articles__text">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Fuga quis facere fugiat soluta. Iste, reiciendis?
-                      Asperiores laborum libero adipisci eveniet quod sequi,
-                      odit non odio temporibus porro commodi qui doloribus.
-                    </p>
-                    <time class="articles__date" pubdate="21-05-2022 19:00"
-                      >21 may, 2022</time
-                    >
-                  </div>
-                </article>
-                <article class="articles__item">
-                  <h4 class="articles__title">
-                    <a href="#">Новостной заголовок</a>
-                  </h4>
-                  <div class="articles__text">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Fuga quis facere fugiat soluta. Iste, reiciendis?
-                      Asperiores laborum libero adipisci eveniet quod sequi,
-                      odit non odio temporibus porro commodi qui doloribus.
-                    </p>
-                    <time class="articles__date" pubdate="21-05-2022 19:00"
-                      >21 may, 2022</time
-                    >
-                  </div>
-                </article>
-                <article class="articles__item">
-                  <h4 class="articles__title">
-                    <a href="#">Новостной заголовок</a>
-                  </h4>
-                  <div class="articles__text">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Fuga quis facere fugiat soluta. Iste, reiciendis?
-                      Asperiores laborum libero adipisci eveniet quod sequi,
-                      odit non odio temporibus porro commodi qui doloribus.
-                    </p>
-                    <time class="articles__date" pubdate="21-05-2022 19:00"
-                      >21 may, 2022</time
-                    >
-                  </div>
-                </article>
-              </div>
-              <!-- Articles -->
 
-              <a href="index.html" class="btn btn--orange"
-                ><span>Вернуться на главную</span></a
-              >
-            </div>
-            <div class="main__col main__col--right">
-              <div class="request-form request-form--right">
-                <div class="request-form__header">
-                  <h3 class="request-form__title">Получить обратный звонок</h3>
-                  <div class="request-form__text">
-                    Оставьте заявку и наш менеджер с Вами свяжется
-                  </div>
-                </div>
-                <div class="request-form__content">
-                  <form class="form" action="/" method="post">
-                    <div class="form__group">
-                      <div class="form__group-user"></div>
-                      <input class="input" type="text" placeholder="Ваше имя" />
-                    </div>
-                    <div class="form__group">
-                      <div class="form__group-tel"></div>
-                      <input
-                        class="input"
-                        type="tel"
-                        placeholder="Ваш телефон"
-                      />
-                    </div>
-                    <div class="form__group">
-                      <div class="form__group-email"></div>
-                      <input
-                        class="input"
-                        type="email"
-                        placeholder="Ваш email"
-                      />
-                    </div>
-                    <button class="btn btn--orange btn--block" type="submit">
-                      <span>Перезвоните мне</span>
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </main>
-          <!-- Main -->
-        </div>
-      </section>
-      <!-- Main section -->
 
-      <!-- Footer section  -->
-      <footer class="footer">
-        <div class="container">
-          <img src="./assets/images/footer/logo-black.svg" alt="" />
-          <address class="footer__contacts">
-            <p>Москва, Улица Комсомольская 43</p>
-            <p>
-              Звоните нам:
-              <a href="tel:+7(123)-456-78-90">+7(123)-456-78-90</a> или пишите
-              на почту:
-              <a href="mailto:translogistic@example.com"
-                >translogistic@example.com</a
-              >
-            </p>
-          </address>
+<!-- Javascript -->
+<script src="assets/js/jquery-3.4.1.min.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/aos.js"></script>
+<script src="assets/js/app.js"></script>
 
-          <nav class="footer__nav">
-            <a href="">Термины &amp; Условия</a>
-            <a href="">Пользовательское соглашение</a>
-            <a href="">Наш блог</a>
-          </nav>
-        </div>
-      </footer>
-      <!-- Footer section  -->
-    </div>
 
-    <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/app.js"></script>
-  </body>
+</body>
 </html>
